@@ -85,4 +85,15 @@ for make in makes:
                         if this_color_num == color[0]:
                             new_dict[this_make][this_model].append(color[1])
 
-print('Final dictionary', new_dict)
+# print('Final dictionary', new_dict)
+
+for (make, models) in new_dict.items():
+    this_make = make
+    print(f'''
+{make}
+_____________________
+''')
+    for (model, colors) in models.items():
+        this_model = model
+        space = ", "
+        print(f'''{this_model} available in {space.join(colors)}''')
