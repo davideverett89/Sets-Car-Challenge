@@ -86,7 +86,3 @@ for make in makes:
                             new_dict[this_make][this_model].append(color[1])
 
 print('Final dictionary', new_dict)
-
-for (make, models) in new_dict.items():
-    
-    print('New loop:', make, models)
